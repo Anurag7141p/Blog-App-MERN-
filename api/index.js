@@ -14,7 +14,7 @@ const path = require('path')
 app.use(express.json())
 app.use('/images',express.static(path.join(__dirname,'/images')))
 
-mongoose.connect('mongodb://127.0.0.1:27017/Blog')
+mongoose.connect('mongodb+srv://anurag:anurag123@cluster0.bfblurx.mongodb.net/Blog')
 .then(() => console.log('Connected to mongodb'))
 .catch((err)=>console.log(err))
 
